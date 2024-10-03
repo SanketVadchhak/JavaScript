@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--nav-background);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    flex: 1; /* Allow the links to take up space */
+}
+
+.nav-links a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: 600;
+    transition: color 0.3s; /* Transition for color */
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Change color on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow on hover */
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: #0066cc; /* Blue color */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Added transition for box-shadow */
+}
+
+.btn:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Space between buttons and icon */
+}
+
+#theme-toggle-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 24px; /* Font size for the icon */
+    color: var(--label-color); /* Use theme label color */
+    transition: transform 0.3s; /* Smooth transition */
+    margin-right: 15px; /* Move button slightly left */
+}
+
+#theme-toggle-button:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.hero {
+    background: linear-gradient(135deg, #e6f2ff, #cce0ff); /* Mixed light gradient for hero section */
+    padding: 70px 20px; /* Increased padding for height */
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevent overflow from the equations */
+}
+
+.equations {
+    position: absolute; /* Positioning the equations */
+    width: 100%;
+    top: 70px; /* Adjust based on your design */
+}
+
+.row {
+    display: flex;
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1.2rem; /* Font size for equations */
+    color: #004080; /* Darker color for the equations to match the background */
+    margin: 4px 0; /* Add space between rows */
+}
+
+.row span {
+    margin-right: 20px; /* Space after each equation */
+}
+
+
+.left-to-right {
+    animation: scroll-left 20s linear infinite; /* Scroll left to right */
+}
+
+.right-to-left {
+    animation: scroll-right 20s linear infinite; /* Scroll right to left */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End at the left */
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%); /* Start from the left */
+    }
+    100% {
+        transform: translateX(100%); /* End at the right */
+    }
+}
+
+
+
+.features {
+    padding: 2rem;
+    background-color: var(--features-background);
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.feature-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.how-it-works {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 300px; /* Increased height */
+    width: 200px; /* Width of each box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step h3 {
+    margin-top: 10px;
+    font-size: 1.5rem; /* Increased font size */
+}
+
+.step p {
+    font-size: 1rem; /* Increased font size */
+    color: #555;
+}
+
+.testimonials {
+    padding: 2rem;
+    background-color: var(--testimonials-background);
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonial-card {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+:root {
+    --nav-background: #fff;
+    --link-color: #333;
+    --label-color: #333;
+    --features-background: #f0f0f0;
+    --testimonials-background: #e0e0e0;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-links a {
+    color: #bbb;
+}
+
+body.dark-mode .btn {
+    background-color: #1e90ff;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #1c86ee;
+}
+
+body.dark-mode .features {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .testimonial-card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
