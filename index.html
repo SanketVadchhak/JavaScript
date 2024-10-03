@@ -1,51 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>ACE - Achieve Career Excellence</title>
 </head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="ACE Logo" /> <!-- Replace with your logo image -->
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="#signup" class="btn">Sign Up</a>
+            <a href="#login" class="btn">Login</a>
+            <div class="theme-toggle">
+                <button id="theme-toggle-button" aria-label="Toggle theme">
+                    <img id="theme-icon" src="sun.png" alt="Sun Icon" width="24" height="24" /> <!-- Initial sun icon -->
+                </button>
+            </div>            
+            </div>
+        </div>
+    </nav>
 
-<body style="background-color: aqua;">
-    <div style="display: flex; flex-direction: column; text-align: center;">
-        <h1>Calculation</h1>
-        <div style="margin: 3px;">
-            <label>Amount &nbsp;</label> <input type="text" name="" id="amount">
+    <header class="hero">
+        <div class="hero">
+            <h1>Achieve Career Excellence</h1>
+            <p>Your journey to success starts here!</p>
+            <div class="equations">
+                <div class="row left-to-right">
+                    <span>E = mc²</span>
+                    <span>F = ma</span>
+                    <span>v = u + at</span>
+                    <span>s = ut + 1/2at²</span>
+                    <span>p = mv</span>
+                    <span>W = Fd</span>
+                    <span>Q = mcΔT</span>
+                    <span>V = IR</span>
+                    <span>A = πr²</span>
+                    <span>t = 2h/g</span>
+                    <span>R = V/I</span>
+                    <span>p = F/A</span>
+                    <span>V = lwh</span>
+                    <span>F = G(m₁m₂/r²)</span>
+                    <span>p = mv²</span>
+                    <span>t = 1/f</span>
+                    <span>C = Q/V</span>
+                    <span>λ = v/f</span>
+                    <span>ΣF = ma</span>
+                    <span>θ = tan⁻¹(opposite/adjacent)</span>
+                    <span>F_friction = μN</span>
+                </div>
+                <div class="row right-to-left">
+                    <span>1/x + 1/y = 1/z</span>
+                    <span>Δx/Δy = constant</span>
+                    <span>∇ · F = ρ</span>
+                    <span>∮C F · dr = 0</span>
+                    <span>∂²u/∂x² + ∂²u/∂y² = 0</span>
+                    <span>F = -kx</span>
+                    <span>V = πr²h</span>
+                    <span>E = 1/2 kx²</span>
+                    <span>t = 2π√(l/g)</span>
+                    <span>R_total = R₁ + R₂ + ... + R_n</span>
+                    <span>P = IV</span>
+                    <span>Q = nRT</span>
+                    <span>F = m(v-u)/t</span>
+                    <span>v = √(gh)</span>
+                    <span>k = F/x</span>
+                    <span>A = 1/2 bh</span>
+                    <span>S = 1/2 at²</span>
+                    <span>R = ρL/A</span>
+                    <span>t = 1/f</span>
+                    <span>t = (t₁ + t₂ + ... + t_n)/n</span>
+                </div>
+                <div class="row left-to-right">
+                    <span>F_friction = μN</span>
+                    <span>t = d/v</span>
+                    <span>m = ρV</span>
+                    <span>R_eq = 1/(1/R₁ + 1/R₂ + ... + 1/R_n)</span>
+                    <span>Q = ∫Idt</span>
+                    <span>C = ε₀(A/d)</span>
+                    <span>θ = arcsin(opposite/hypotenuse)</span>
+                    <span>E = hf</span>
+                    <span>V = ∫Edq</span>
+                    <span>P = F/A</span>
+                    <span>F = -mg</span>
+                    <span>E = kQ/r²</span>
+                    <span>Q = 1/2 CV²</span>
+                    <span>V = d/t</span>
+                    <span>λ = h/p</span>
+                    <span>S = ut + 1/2at²</span>
+                    <span>A = lw</span>
+                    <span>ΔV = W/Q</span>
+                    <span>R = ρL/A</span>
+                    <span>n = (c1/c2)</span>
+                    <span>m = n * M</span>
+                </div>
+                <div class="row right-to-left">
+                    <span>F = ma</span>
+                    <span>Q = ∫I dt</span>
+                    <span>λ = h/mv</span>
+                    <span>P = IV</span>
+                    <span>C = ε₀A/d</span>
+                    <span>W = Fd cos(θ)</span>
+                    <span>v = ωr</span>
+                    <span>ΣF = 0</span>
+                    <span>E_k = 1/2 mv²</span>
+                    <span>t = 2π√(l/g)</span>
+                    <span>ΔH = H_products - H_reactants</span>
+                    <span>ΔS = S_products - S_reactants</span>
+                    <span>V = I × R</span>
+                    <span>W = P × t</span>
+                    <span>pH = -log[H⁺]</span>
+                    <span>k = [products]/[reactants]</span>
+                    <span>m = v * d</span>
+                    <span>F = kx</span>
+                    <span>V = d * h</span>
+                    <span>t = t₁ + t₂</span>
+                    <span>P = E/t</span>
+                </div>
+                <div class="row left-to-right">
+                    <span>R_eq = V/I</span>
+                    <span>Q = m * ΔT</span>
+                    <span>P = F * v</span>
+                    <span>F = qE</span>
+                    <span>E = P/A</span>
+                    <span>v = d/t</span>
+                    <span>λ = c/f</span>
+                    <span>m = pV</span>
+                    <span>n = m/M</span>
+                    <span>F = d/dt(mv)</span>
+                    <span>ΣF = 0</span>
+                    <span>t = (1/2) * (b - a)</span>
+                    <span>P = IV</span>
+                    <span>Q = 1/2 CV²</span>
+                    <span>F = (Gm₁m₂)/r²</span>
+                    <span>t = (1/2)gt²</span>
+                    <span>Q = nRΔT</span>
+                    <span>ΔV = W/Q</span>
+                    <span>Δt = t_f - t_i</span>
+                    <span>m = ρV</span>
+                    <span>F = A * P</span>
+                </div>
+                <div class="row right-to-left">
+                    <span>E = mc²</span>
+                    <span>F = ma</span>
+                    <span>v = u + at</span>
+                    <span>s = ut + 1/2at²</span>
+                    <span>p = mv</span>
+                    <span>W = Fd</span>
+                    <span>Q = mcΔT</span>
+                    <span>V = IR</span>
+                    <span>A = πr²</span>
+                    <span>t = 2h/g</span>
+                    <span>R = V/I</span>
+                    <span>p = F/A</span>
+                    <span>V = lwh</span>
+                    <span>F = G(m₁m₂/r²)</span>
+                    <span>p = mv²</span>
+                    <span>t = 1/f</span>
+                    <span>C = Q/V</span>
+                    <span>λ = v/f</span>
+                    <span>ΣF = ma</span>
+                    <span>θ = tan⁻¹(opposite/adjacent)</span>
+                    <span>F_friction = μN</span>
+                </div>
+                <div class="row left-to-right">
+                    <span>F_friction = μN</span>
+                    <span>t = d/v</span>
+                    <span>m = ρV</span>
+                    <span>R_eq = 1/(1/R₁ + 1/R₂ + ... + 1/R_n)</span>
+                    <span>Q = ∫Idt</span>
+                    <span>C = ε₀(A/d)</span>
+                    <span>θ = arcsin(opposite/hypotenuse)</span>
+                    <span>E = hf</span>
+                    <span>V = ∫Edq</span>
+                    <span>P = F/A</span>
+                    <span>F = -mg</span>
+                    <span>E = kQ/r²</span>
+                    <span>Q = 1/2 CV²</span>
+                    <span>V = d/t</span>
+                    <span>λ = h/p</span>
+                    <span>S = ut + 1/2at²</span>
+                    <span>A = lw</span>
+                    <span>ΔV = W/Q</span>
+                    <span>R = ρL/A</span>
+                    <span>n = (c1/c2)</span>
+                    <span>m = n * M</span>
+                </div>
+            </div>
         </div>
-        <div style="margin: 3px;">
-            <label>Interest &nbsp;&nbsp;</label> <input type="text" id="interest">
+        
+    </header>
+
+    <section class="features" id="features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="mock-interviews.png" alt="Mock Interviews">
+                <h3>Mock Interviews</h3>
+                <p>Practice interviews with real-time feedback.</p>
+            </div>
+            <div class="feature-card">
+                <img src="progress-tracking.png" alt="Progress Tracking">
+                <h3>Progress Tracking</h3>
+                <p>Track your performance over time and see improvements.</p>
+            </div>
+            <div class="feature-card">
+                <img src="personalized-feedback.png" alt="Personalized Feedback">
+                <h3>Personalized Feedback</h3>
+                <p>Get tailored advice to enhance your skills.</p>
+            </div>
         </div>
-        <div style="margin: 3px;">
-            <label>Starting Date : </label> 
-            <input type="date" id="SD">
-            <!-- <input type="text" size="1" maxlength="2" id="SD">
-            <h2 style="display: inline; vertical-align: sub;">/</h2> <input type="text" size="1" maxlength="2" id="SM">
-            <h2 style="display: inline; vertical-align: sub;">/</h2> <input type="text" size="1" maxlength="4" id="SY"> -->
+    </section>
+
+    <div class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: Initial Assessment</h3>
+                <p>We begin with a thorough assessment of your current skills and areas that need improvement. This includes evaluating your existing knowledge, experience, and goals to tailor our program to your specific needs.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Personalized Mock Interviews</h3>
+                <p>Our team conducts personalized mock interview sessions that are specifically designed for your field. These sessions simulate real interview conditions, allowing you to practice your responses and improve your confidence.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Constructive Feedback</h3>
+                <p>After each mock interview, you will receive detailed constructive feedback. This feedback focuses on your strengths and highlights areas where you can enhance your performance, along with resources and strategies for improvement.</p>
+            </div>
+            <div class="step">
+                <h3>Step 4: Progress Tracking</h3>
+                <p>We provide comprehensive tracking of your progress throughout the program. Our dashboard allows you to visualize your improvement over time, making it easier to understand your growth and areas that may still need attention.</p>
+            </div>
+            <div class="step">
+                <h3>Step 5: Final Preparation Strategies</h3>
+                <p>As you approach your actual interviews, we offer final preparation strategies and tips to ensure you are fully equipped to impress potential employers. This includes behavioral strategies, body language tips, and common questions to anticipate.</p>
+            </div>
         </div>
-        <div style="margin: 3px;">
-            <label>Ending Date : </label> 
-            <input type="date" id="ED">
-            <!-- <input type="text" size="1" maxlength="2" id="ED">
-            <h2 style="display: inline; vertical-align: sub;">/</h2> <input type="text" size="1" maxlength="2" id="EM">
-            <h2 style="display: inline; vertical-align: sub;">/</h2> <input type="text" size="1" maxlength="4" id="EY"> -->
+    </div>            
+
+    <section class="testimonials" id="testimonials">
+        <h2>User Testimonials</h2>
+        <div class="testimonial-cards" id="testimonial-cards">
+            <!-- Testimonials will be populated here by JavaScript -->
         </div>
-        <div style="margin: 3px;">
-            <label>Days :-&nbsp; </label> <label id="days"></label>
-        </div>
-        <div style="margin: 3px;">
-            <label id="counter"></label>
-        </div>
-        <div style="margin: 8px;">
-            <input type="submit" id="result" value="Result" onclick="calc()"></input>
-        </div>
-        <div>
-            <h3 id="IA">Interest Amount :&nbsp;</h3>
-            <h3 id="FA">Final Amount :&nbsp;</h3>
-            <h3 id="MA">Monthly Amount :&nbsp;</h3>
-        </div>
-    </div>
+    </section>    
+
+    <footer class="footer">
+        <p>&copy; 2024 ACE. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3257ee19b0.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
